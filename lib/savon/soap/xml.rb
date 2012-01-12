@@ -153,7 +153,7 @@ module Savon
           if input.nil?
             tag(xml, :Body)
           else
-            tag(xml, :Body) { xml.tag!(*add_namespace_to_input) { xml << body_to_xml } }
+            tag(xml, :Body) { xml << body_to_xml }
           end
         end
       end
